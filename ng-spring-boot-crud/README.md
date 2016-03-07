@@ -13,8 +13,7 @@ For rapidly creating prototypes of a web application, a UI toolkit or library wi
 AngularJS is a MVC based framework for web applications, written in JavaScript. It makes it possible to use the Model-View-Controller pattern on the front-end. It also comes with several additional modules. In this example I'm also using **angular-resource**, which is a simple factory-pattern based module for creating REST clients.
 
 ### Back-end
-MySql is the backend, Create springdb and springdbtest database, before running this application.
-i created separate databases, i assume springdbtest db  must be empty before testing it. 
+MySql is the backend DB, create springdb and springdbtest databases, before running this application.
 
 #### Spring Boot
 One of the hassles while creating web applications using the Spring Framework is that it involves a lot of configuration. Spring Boot makes it possible to write configuration-less web application because it does a lot for you out of the box.
@@ -28,7 +27,6 @@ With Spring Boot you can even leave the configuration behind for configuring Spr
 ## Installation
 
 Installation is quite easy, first you will have to install some dependencies using maven:
-
 
 Then you can run Maven to package the application:
 ```
