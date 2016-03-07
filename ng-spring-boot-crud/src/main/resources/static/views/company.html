@@ -1,0 +1,31 @@
+<table class="table table-striped">
+	<tr>
+		<th>Company Name</th>
+		<th>Address</th>
+		<th>City</th>
+		<th>Country</th>
+		<th>PhoneNumber</th>
+		<th>&nbsp;</th>
+		<th>&nbsp;</th>
+	</tr>
+	<!-- <ul class="list-group">  -->
+
+
+		<!-- <li class="list-group-item text-center"
+			ng-repeat="company in companies">  -->
+	<tr ng-repeat="company in companies">
+		<td>{{company.name}}</td>
+		<td>{{company.adress}}</td>
+		<td>{{company.city}}</td>
+		<td>{{company.country}}</td>
+		<td>{{company.phoneNumber}}</td>
+		<td><button type="button"
+				class="btn btn-danger btn-s pull-right btn-separation-left"
+				ng-click="remove(company,$index)">
+				<span class="glyphicon glyphicon-trash"> </span>
+			</button></td>
+		<td><a href="#companies/edit/{{company.companyId}}"
+			class="btn btn-primary btn-s pull-right"><span
+				class="glyphicon glyphicon-pencil"></span></a></td>
+	</tr>	
+</table>

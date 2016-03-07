@@ -1,0 +1,30 @@
+<div class="row"> 
+  <div class="col-xs-12">
+    <div class="alert alert-warning" ng-show="companyForm.$dirty && companyForm.$invalid">
+      Please enter valid values in all required fields
+    </div>
+    <form name="companyForm">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Company Name" ng-model="company.name" required />
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Company Address" ng-model="company.adress" required />
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Company City Name" ng-model="company.city" required />
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Company Country" ng-model="company.country" required />
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Company Phone Number" ng-model="company.phoneNumber" required />
+      </div>
+      <div class="form-group">
+        <button type="button" class="btn btn-success btn-lg btn-block" ng-click="companyForm.$valid && save()"><span class="glyphicon glyphicon-ok"></span> Save</button>
+      </div>
+      <div class="form-group">
+        <a href="#companies" class="btn btn-default btn-lg btn-block"><span class="glyphicon glyphicon-remove"></span> Cancel</a>
+      </div>
+    </form>
+  </div>
+</div>
