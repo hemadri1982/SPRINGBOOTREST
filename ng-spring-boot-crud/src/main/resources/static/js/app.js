@@ -110,7 +110,7 @@ app.factory('Companies', function($http) {
 	return service;
 });
 
-// listing of all expenses
+// listing of all companies
 app.controller('CompaniesViewControl', ['$scope', 'Companies', function($scope, Companies) {
 	$scope.companies = Companies.entries;
 
@@ -118,7 +118,7 @@ app.controller('CompaniesViewControl', ['$scope', 'Companies', function($scope, 
 		Companies.remove(company);	
 	};
 
-	// we need to watch the list of expenses more closely to have it always
+	// we need to watch the list of companies more closely to have it always
 	// updated
 	$scope.$watch(function () { return Companies.entries; }, function (entries) {
 		$scope.companies = entries;
@@ -126,7 +126,7 @@ app.controller('CompaniesViewControl', ['$scope', 'Companies', function($scope, 
 
 }]);
 
-// create or edit an expense
+// create or edit a company 
 app.controller('CompanyViewControl', ['$scope', '$routeParams', '$location', 'Companies', function($scope, $routeParams, $location, Companies) {
 
 	// the Company will either be a new one or existing one if we are
