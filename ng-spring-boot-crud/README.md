@@ -24,6 +24,20 @@ If you add the spring-boot-starter-web dependency, then you can start writing co
 Spring Data JPA allows you to create repositories for your data without even having to write a lot of code. The only code you need is a simple interface that extends from another interface and then you're done.
 With Spring Boot you can even leave the configuration behind for configuring Spring Data JPA, so now it's even easier.
 
+
+## REST  Webservices URL
+
+
+GET(READ ALL ) : http://localhost:8080/companies/ 
+
+GET(ONE RECORD): http://localhost:8080/companies/{id} -->Replace Id with correct ID
+
+POST(SAVE): http://localhost:8080/companies/add/
+
+PUT(UPDATE):http://localhost:8080/companies/update/{id} ---> replace id with correct id 
+
+DELETE-http://localhost:8080/companies/delete/{id} --> Replace id with id
+
 ## Installation
 
 Installation is quite easy, first you will have to install some dependencies using maven:
