@@ -21,6 +21,10 @@
 		</plugins>
 	</build>
 	
+	<properties>
+	<start-class>com.spring.company.CompanyApplication</start-class>
+	</properties>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
