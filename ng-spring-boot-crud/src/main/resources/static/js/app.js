@@ -154,13 +154,12 @@ app.controller('CompanyViewControl', ['$scope', '$routeParams', '$location', 'Co
 
 }]);
 
-// we create a custom directive so we can use the tag <expense>
+// we create a custom directive so we can use the tag <companyview>
 // doc: https://docs.angularjs.org/guide/directive, tutorial:
 // http://www.ng-newsletter.com/posts/directives.html
 app.directive('companyview', function(){
 	return {
 		restrict: 'E',  // it means it's for elements (custom html tags)
 		templateUrl: './views/company.html',
-		// template: '<div>{{expense.description}}</div>'
 	};
 });
